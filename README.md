@@ -5,10 +5,10 @@
 ### 使用帮助：
 - 下载[atom-shell][1]。
 - 下载app代码
-  ```
-    $ cd [atom-shell]/resources/
+	```
+	$ cd [atom-shell]/resources/
 	$ git clone https://github.com/wuwu8ku/imgminify-app.git
-  ```
+	```
 - 修改imgminify-app文件夹名为app，使atom打开时直接加载应用。
 - 打开atom.exe，拖拽图片或文件夹进工具中的虚框内，选择配置后点击“开始优化”按钮进行图片压缩，使用时建议控制压缩数量。
 - 如勾选“是否覆盖原图片”，则压缩的图片会覆盖原图片（建议使用该功能前做好备份工作，特别是调整jpeg图片品质时）；否则，压缩后会自动创建“optimized+日期”文件夹，里面就是压缩后的目录及图片。
