@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html;charset=utf-8">
+<title>图片压缩工具-ImgMinify App</title>
+<link href="css/main.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="drop">请将图片或文件夹拖放至此</div>
+	<div class="setting">
+		<fieldset>
+			<legend>全局设置</legend>
+			<div><input type="checkbox" id="global_overwrite" /><label for="global_overwrite">是否覆盖原图片</label></div>
+			<p>建议使用该功能前先做好备份</p>
+		</fieldset>
+		<fieldset>
+			<legend>JPEG 设置</legend>
+			<div><input type="checkbox" id="jpeg_quality" /><label for="jpeg_quality">是否调整品质</label></div>
+			<div><input type="range" id="jpeg_range" min="10" max="100" step="5" value="60" disabled="disabled" /><label>60</label></div>
+			<div><input type="checkbox" id="jpeg_progressive" checked="checked" /><label for="jpeg_progressive">渐进式图片格式</label></div>
+		</fieldset>
+		<div class="btns">
+			<button id="btn_optim">开始优化</button>
+		</div>
+	</div>
+	<div class="summary">
+		<div class="summary-list">
+			<table>
+				<thead>
+					<tr>
+						<th width="5%">序号</th>
+						<th width="8%">类型</th>
+						<th width="43%">文件</th>
+						<th width="9%">状态</th>
+						<th width="12%">原始大小</th>
+						<th width="12%">优化后大小</th>
+						<th width="11%">节省空间</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</div>
+		<div class="summary-total"></div>
+	</div>
+	<div class="spinner">
+		<div class="spinner-box">
+			<div class="dot1"></div>
+			<div class="dot2"></div>
+		</div>
+	</div>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
