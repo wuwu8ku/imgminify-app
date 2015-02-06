@@ -9,6 +9,8 @@
 ```
 $ cd [atom-shell]/resources/
 $ git clone https://github.com/wuwu8ku/imgminify-app.git
+$ cd imgminify-app/
+$ npm install
 ```
 
 - 修改imgminify-app文件夹名为app，使atom打开时直接加载应用。
