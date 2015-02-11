@@ -22,11 +22,11 @@ window.onload = function(){
 		cur_files = files;
 		cur_root = root;
 		summary.showList(cur_files);
-		setting.open();
 	})
 	setting.emitter.on('run', function(opts) {
 		if(!cur_files.length || !cur_root){
 			alert('没有可以压缩的图片');
+			setting.open();
 			return;
 		}
 		spinner.show();
